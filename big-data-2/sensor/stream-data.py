@@ -3,7 +3,7 @@
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('rtd.hpwren.ucsd.edu', 12020))
+s.connect(('rtd.hpwren.ucsd.edu', 12028))
 for i in range(0, 60):
     d = s.recv(1024)
     p = d.split('\t', 2)
